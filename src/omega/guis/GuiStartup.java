@@ -26,9 +26,10 @@ public class GuiStartup extends GuiComponent {
 			"Find the missing computer chip for your robot!",
 			"This games was not created to be a maze game, it just turned into it.",
 			"This is my first Compo submission, code created is a mess!",
-			"Use WASD keys to move, Esc to pause, arrows amd enter to navigate.",
+			"Use WASD keys to move, Esc to pause, arrows amd enter to navigate;",
+			"F2 screenshot, F11 fullscreen, screenshots and configs saved in home/roaming.",
 			"NULL",
-			"So, are you ready?",
+		//	"So, are you ready?",
 			"NULL",
 			"-- PRESS SPACE TO START --"
 	};
@@ -121,13 +122,13 @@ public class GuiStartup extends GuiComponent {
 			} else if (blink.getCurrentAlpha() == 1.0f) {
 				blink.setAlphaDriver(new SlideDriver(1.0f, 0.0f, 1.0f));
 			}
+			if (startGame.wasDown()) {
+				FlounderSound.playSystemSound(loadSound);
+				spaceBlinking = false;
+				fadeOut = true;
+			}
 		}
 
-		if (startGame.wasDown()) {
-			FlounderSound.playSystemSound(loadSound);
-			spaceBlinking = false;
-			fadeOut = true;
-		}
 
 		if (fadeOut) {
 			if (alphaDriver == null) {

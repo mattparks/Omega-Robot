@@ -62,7 +62,7 @@ public class OmegaInterface extends IExtension implements IStandard {
 			}
 		});
 
-		FlounderEvents.addEvent(new IEvent() {
+		/*FlounderEvents.addEvent(new IEvent() {
 			@Override
 			public boolean eventTriggered() {
 				return polygons.wasDown();
@@ -101,20 +101,10 @@ public class OmegaInterface extends IExtension implements IStandard {
 				//	Seed.randomize();
 				FlounderSound.getMusicPlayer().skipTrack();
 			}
-		});
-
-		FlounderEvents.addEvent(new IEvent() {
-			@Override
-			public boolean eventTriggered() {
-				return switchCamera.wasDown();
-			}
-
-			@Override
-			public void onEvent() { /* TODO: Method. */ }
-		});
+		});*/
 
 		FlounderBounding.setRenders(Omega.configMain.getBooleanWithDefault("boundings_render", false, FlounderBounding::renders));
-		FlounderProfiler.toggle(Omega.configMain.getBooleanWithDefault("profiler_open", true, FlounderProfiler::isOpen));
+		FlounderProfiler.toggle(Omega.configMain.getBooleanWithDefault("profiler_open", false, FlounderProfiler::isOpen));
 
 		pausedMusic = new Playlist();
 		//	pausedMusic.addMusic(Sound.loadSoundInBackground(new MyFile(MyFile.RES_FOLDER, "music", "music1.wav"), 0.80f));

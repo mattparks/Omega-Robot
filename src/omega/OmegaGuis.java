@@ -1,5 +1,6 @@
 package omega;
 
+import flounder.devices.*;
 import flounder.fonts.*;
 import flounder.framework.*;
 import flounder.guis.*;
@@ -62,6 +63,8 @@ public class OmegaGuis extends IExtension implements IGuiMaster {
 				pause(!paused);
 			}
 		}
+
+		FlounderMouse.setCursorHidden(!isGamePaused());
 	}
 
 	@Override

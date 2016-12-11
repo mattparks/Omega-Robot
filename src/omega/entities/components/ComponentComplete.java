@@ -1,12 +1,16 @@
 package omega.entities.components;
 
+import flounder.devices.*;
 import flounder.guis.*;
+import flounder.resources.*;
+import flounder.sounds.*;
 import omega.*;
 import omega.entities.*;
 import omega.room.*;
 
 public class ComponentComplete extends IEntityComponent {
 	public static final int ID = EntityIDAssigner.getId();
+	public static final Sound SOUND = Sound.loadSoundNow(new MyFile(MyFile.RES_FOLDER, "sounds", "won.wav"), 1.0f);
 
 	public ComponentComplete(Entity entity) {
 		super(entity, ID);
@@ -42,6 +46,7 @@ public class ComponentComplete extends IEntityComponent {
 		if (OmegaRoom.getEntityPlayer() != null) {
 			if (OmegaRoom.getEntityPlayer().getBounding().intersects(colliderComponent.getAABB()).isIntersection()) {
 				((OmegaGuis) FlounderGuis.getGuiMaster()).getGuiFinished().setWon();
+				FlounderSound.playSystemSound(SOUND);
 			}
 		}
 	}
