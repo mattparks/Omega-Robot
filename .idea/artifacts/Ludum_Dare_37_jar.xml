@@ -1,0 +1,25 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Ludum Dare 37:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Ludum_Dare_37_jar</output-path>
+    <root id="archive" name="Ludum Dare 37.jar">
+      <element id="module-output" name="Ludum Dare 37" />
+      <element id="module-output" name="Flounder-Framework" />
+      <element id="module-output" name="Flounder-Engine" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/Flounder-Engine/libs/lwjgl/lwjgl-glfw.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/Flounder-Engine/libs/lwjgl/lwjgl-openal.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/Flounder-Engine/libs/lwjgl/lwjgl-opencl.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/Flounder-Engine/libs/lwjgl/lwjgl-opengl.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/Flounder-Engine/libs/lwjgl/lwjgl.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/Flounder-Engine/libs/lwjgl/lwjgl-glfw-natives-linux.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/Flounder-Engine/libs/lwjgl/lwjgl-glfw-natives-macos.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/Flounder-Engine/libs/lwjgl/lwjgl-glfw-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/Flounder-Engine/libs/lwjgl/lwjgl-openal-natives-linux.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/Flounder-Engine/libs/lwjgl/lwjgl-openal-natives-macos.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/Flounder-Engine/libs/lwjgl/lwjgl-openal-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/Flounder-Engine/libs/lwjgl/lwjgl-natives-linux.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/Flounder-Engine/libs/lwjgl/lwjgl-natives-macos.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/Flounder-Engine/libs/lwjgl/lwjgl-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/Flounder-Engine/libs/steamworks/steamworks4j-1.5.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
