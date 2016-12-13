@@ -5,7 +5,6 @@ import flounder.devices.*;
 import flounder.events.*;
 import flounder.framework.*;
 import flounder.guis.*;
-import flounder.helpers.*;
 import flounder.inputs.*;
 import flounder.logger.*;
 import flounder.physics.bounding.*;
@@ -103,7 +102,7 @@ public class OmegaInterface extends IExtension implements IStandard {
 			}
 		});*/
 
-		FlounderBounding.setRenders(Omega.configMain.getBooleanWithDefault("boundings_render", false, FlounderBounding::renders));
+		FlounderBounding.toggle(Omega.configMain.getBooleanWithDefault("boundings_render", false, FlounderBounding::renders));
 		FlounderProfiler.toggle(Omega.configMain.getBooleanWithDefault("profiler_open", false, FlounderProfiler::isOpen));
 
 		pausedMusic = new Playlist();

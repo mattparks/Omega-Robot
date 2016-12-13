@@ -2,8 +2,8 @@
 <launch4jConfig>
   <dontWrapJar>false</dontWrapJar>
   <headerType>gui</headerType>
-  <jar>C:\Users\mattp\OneDrive\Ludum Dare 37\out\artifacts\Omaga_Robot_jar\Omaga Robot.jar</jar>
-  <outfile>C:\Users\mattp\OneDrive\Ludum Dare 37\out\artifacts\Omaga_Robot_jar\Omaga Robot.exe</outfile>
+  <jar>C:\Users\mattp\OneDrive\Flounder Workspace\out\artifacts\Omega_Robot_jar\Omega-Robot.jar</jar>
+  <outfile>C:\Users\mattp\OneDrive\Flounder Workspace\out\artifacts\Omega_Robot_jar\Omaga-Robot.exe</outfile>
   <errTitle></errTitle>
   <cmdLine></cmdLine>
   <chdir>.</chdir>
@@ -13,7 +13,7 @@
   <stayAlive>false</stayAlive>
   <restartOnCrash>false</restartOnCrash>
   <manifest></manifest>
-  <icon>C:\Users\mattp\OneDrive\Ludum Dare 37\res\res\icon.ico</icon>
+  <icon>C:\Users\mattp\OneDrive\Flounder Workspace\Omega-Robot\res\res\icon.ico</icon>
   <jre>
     <path></path>
     <bundledJre64Bit>false</bundledJre64Bit>
