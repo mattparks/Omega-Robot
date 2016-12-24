@@ -40,7 +40,7 @@ public class MenuPause extends GuiComponent {
 	public MenuPause() {
 		loaded = 0;
 
-		title = Text.newText("Game Paused").setFontSize(2.0f).create();
+		title = Text.newText("Game Paused").setFontSize(2.0f).textAlign(GuiAlign.CENTRE).create();
 		title.setColour(0, 1, 0);
 		title.setAlphaDriver(new ConstantDriver(0.0f));
 		addText(title, 0.5f, 0.08f, 5.0f);
@@ -65,7 +65,7 @@ public class MenuPause extends GuiComponent {
 	}
 
 	private Text load(String s, float extraOffset) {
-		Text t = Text.newText(s).setFontSize(1.0f).textAlign(TextAlign.CENTRE).create();
+		Text t = Text.newText(s).setFontSize(1.0f).textAlign(GuiAlign.CENTRE).create();
 		t.setColour(0, 1, 0);
 		t.setAlphaDriver(new ConstantDriver(0.0f));
 		addText(t, 0.5f, extraOffset + 0.3f + (0.1f * loaded++), 1.0f);

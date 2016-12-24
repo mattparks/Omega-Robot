@@ -63,7 +63,7 @@ public class GuiStartup extends GuiComponent {
 
 		for (int i = 0; i < texts.length; i++) {
 			if (!texts[i].equals("NULL")) {
-				Text line = Text.newText(texts[i].substring(0, 1)).setFont(FlounderFonts.FFF_FORWARD).setFontSize(0.9f).textAlign(TextAlign.CENTRE).create();
+				Text line = Text.newText(texts[i].substring(0, 1)).setFont(FlounderFonts.FFF_FORWARD).setFontSize(0.9f).textAlign(GuiAlign.CENTRE).create();
 				line.setColour(0, 1, 0);
 				loadingTexts.add(line);
 			} else {

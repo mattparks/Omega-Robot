@@ -32,7 +32,8 @@ public class Omega extends FlounderFramework {
 				configMain.getBooleanWithDefault("vsync", false, FlounderDisplay::isVSync),
 				configMain.getBooleanWithDefault("antialias", true, FlounderDisplay::isAntialiasing),
 				configMain.getIntWithDefault("sampled", 0, FlounderDisplay::getSamples),
-				configMain.getBooleanWithDefault("fullscreen", false, FlounderDisplay::isFullscreen)
+				configMain.getBooleanWithDefault("fullscreen", false, FlounderDisplay::isFullscreen),
+				false
 		);
 		FlounderMouse.setup(new MyFile(MyFile.RES_FOLDER, "guis", "cursor.png"));
 		setFpsLimit(configMain.getIntWithDefault("fps_limit", -1, FlounderFramework::getFpsLimit));
