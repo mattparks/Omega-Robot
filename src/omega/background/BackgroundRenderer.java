@@ -72,8 +72,8 @@ public class BackgroundRenderer extends IRenderer {
 		OpenGlUtils.bindVAO(vaoID, 0);
 		OpenGlUtils.cullBackFaces(false); // Enable face culling if the object does not have transparency.
 
-		OpenGlUtils.bindTextureToBank(background.getTextureID(), 0);
-		OpenGlUtils.bindTextureToBank(lightMap.getTextureID(), 1);
+		OpenGlUtils.bindTexture(background, 0);
+		OpenGlUtils.bindTexture(lightMap, 1);
 
 		shader.getUniformVec4("transform").loadVec4(0.0f, 0.0f, FlounderDisplay.getAspectRatio(), 1.0f);
 

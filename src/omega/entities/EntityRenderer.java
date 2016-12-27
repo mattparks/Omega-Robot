@@ -88,8 +88,8 @@ public class EntityRenderer extends IRenderer {
 		OpenGlUtils.bindVAO(vaoID, 0);
 		OpenGlUtils.cullBackFaces(true); // Enable face culling if the object does not have transparency.
 
-		OpenGlUtils.bindTextureToBank(componentTexture.getTexture().getTextureID(), 0);
-		OpenGlUtils.bindTextureToBank(lightMap.getTextureID(), 1);
+		OpenGlUtils.bindTexture(componentTexture.getTexture(), 0);
+		OpenGlUtils.bindTexture(lightMap, 1);
 
 		shader.getUniformBool("flipX").loadBoolean(componentTexture.isFlipX());
 		shader.getUniformBool("flipY").loadBoolean(componentTexture.isFlipY());
