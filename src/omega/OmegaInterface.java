@@ -3,8 +3,6 @@ package omega;
 import com.codedisaster.steamworks.*;
 import flounder.devices.*;
 import flounder.events.*;
-import flounder.framework.*;
-import flounder.guis.*;
 import flounder.inputs.*;
 import flounder.logger.*;
 import flounder.physics.bounding.*;
@@ -14,7 +12,7 @@ import flounder.standard.*;
 
 import static org.lwjgl.glfw.GLFW.*;
 
-public class OmegaInterface extends IExtension implements IStandard {
+public class OmegaInterface extends IStandard {
 	private KeyButton screenshot;
 	private KeyButton fullscreen;
 	private KeyButton polygons;
@@ -25,7 +23,7 @@ public class OmegaInterface extends IExtension implements IStandard {
 	private Playlist pausedMusic;
 
 	public OmegaInterface() {
-		super(FlounderLogger.class, FlounderStandard.class, FlounderEvents.class, FlounderDisplay.class, FlounderGuis.class, FlounderSound.class, FlounderBounding.class, FlounderSound.class);
+		super(FlounderLogger.class, FlounderProfiler.class, FlounderEvents.class, FlounderBounding.class, FlounderSound.class);
 	}
 
 	@Override
@@ -130,6 +128,11 @@ public class OmegaInterface extends IExtension implements IStandard {
 		if (SteamAPI.isSteamRunning()) {
 			SteamAPI.runCallbacks();
 		}
+	}
+
+	@Override
+	public void profile() {
+
 	}
 
 	@Override

@@ -29,7 +29,7 @@ public class GuiStartup extends GuiComponent {
 			"Use WASD keys to move, Esc to pause, arrows amd enter to navigate;",
 			"F2 screenshot, F11 fullscreen, screenshots and configs saved in home/roaming.",
 			"NULL",
-		//	"So, are you ready?",
+			//	"So, are you ready?",
 			"NULL",
 			"-- PRESS SPACE TO START --"
 	};

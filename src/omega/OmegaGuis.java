@@ -1,8 +1,6 @@
 package omega;
 
 import flounder.devices.*;
-import flounder.fonts.*;
-import flounder.framework.*;
 import flounder.guis.*;
 import flounder.inputs.*;
 import flounder.logger.*;
@@ -11,7 +9,7 @@ import omega.guis.*;
 import omega.room.*;
 import org.lwjgl.glfw.*;
 
-public class OmegaGuis extends IExtension implements IGuiMaster {
+public class OmegaGuis extends IGuiMaster {
 	public static boolean ON_START = true;
 
 	private GuiStartup guiStartup;
@@ -23,7 +21,7 @@ public class OmegaGuis extends IExtension implements IGuiMaster {
 	private KeyButton pause;
 
 	public OmegaGuis() {
-		super(FlounderLogger.class, FlounderProfiler.class, FlounderGuis.class, FlounderFonts.class);
+		super(FlounderLogger.class, FlounderProfiler.class);
 	}
 
 	@Override
@@ -65,6 +63,11 @@ public class OmegaGuis extends IExtension implements IGuiMaster {
 		}
 
 		FlounderMouse.setCursorHidden(!isGamePaused());
+	}
+
+	@Override
+	public void profile() {
+
 	}
 
 	@Override

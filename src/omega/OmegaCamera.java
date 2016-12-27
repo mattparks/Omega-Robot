@@ -2,12 +2,11 @@ package omega;
 
 import flounder.camera.*;
 import flounder.devices.*;
-import flounder.framework.*;
 import flounder.maths.matrices.*;
 import flounder.maths.vectors.*;
 import flounder.space.*;
 
-public class OmegaCamera extends IExtension implements ICamera {
+public class OmegaCamera extends ICamera {
 	private static final float NEAR_PLANE = 0.1f;
 	private static final float FAR_PLANE = 100.0f;
 	private static final float FIELD_OF_VIEW = 90.0f;
@@ -22,7 +21,7 @@ public class OmegaCamera extends IExtension implements ICamera {
 	private Matrix4f projectionMatrix;
 
 	public OmegaCamera() {
-		super(FlounderCamera.class);
+		super();
 	}
 
 	@Override

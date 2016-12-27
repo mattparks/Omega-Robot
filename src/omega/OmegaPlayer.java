@@ -2,13 +2,12 @@ package omega;
 
 import flounder.camera.*;
 import flounder.devices.*;
-import flounder.framework.*;
 import flounder.maths.vectors.*;
 import flounder.profiling.*;
 import omega.entities.components.*;
 import omega.room.*;
 
-public class OmegaPlayer extends IExtension implements IPlayer {
+public class OmegaPlayer extends IPlayer {
 	public static final float PLAYER_X_SPEED = 10.0f;
 	public static final float PLAYER_Y_SPEED = 10.0f;
 	public static final float PLAYER_R_SPEED = 10.0f;
@@ -17,7 +16,7 @@ public class OmegaPlayer extends IExtension implements IPlayer {
 	private Vector3f rotation;
 
 	public OmegaPlayer() {
-		super(FlounderProfiler.class, FlounderCamera.class, FlounderKeyboard.class);
+		super(FlounderProfiler.class, FlounderKeyboard.class);
 	}
 
 	@Override

@@ -1,7 +1,6 @@
 package omega.room;
 
 import flounder.camera.*;
-import flounder.framework.*;
 import flounder.guis.*;
 import flounder.logger.*;
 import flounder.maths.vectors.*;
@@ -14,7 +13,7 @@ import java.awt.image.*;
 import java.io.*;
 import java.util.*;
 
-public class OmegaRoom extends IExtension implements IStandard {
+public class OmegaRoom extends IStandard {
 	private static final MyFile FILE_ROOM = new MyFile(MyFile.RES_FOLDER, "room.png");
 
 	public static boolean CANCEL_RENDERS = true;
@@ -26,7 +25,7 @@ public class OmegaRoom extends IExtension implements IStandard {
 	public static float roomHeight;
 
 	public OmegaRoom() {
-		super(FlounderStandard.class, OmegaEntities.class, FlounderCamera.class);
+		super(FlounderCamera.class, OmegaEntities.class);
 	}
 
 	@Override
@@ -269,6 +268,11 @@ public class OmegaRoom extends IExtension implements IStandard {
 		if (FlounderGuis.getGuiMaster() == null || FlounderGuis.getGuiMaster().isGamePaused()) {
 			return;
 		}
+	}
+
+	@Override
+	public void profile() {
+
 	}
 
 	public static EntityPlayer getEntityPlayer() {

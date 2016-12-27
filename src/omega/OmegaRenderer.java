@@ -4,7 +4,6 @@ import flounder.camera.*;
 import flounder.devices.*;
 import flounder.fbos.*;
 import flounder.fonts.*;
-import flounder.framework.*;
 import flounder.guis.*;
 import flounder.helpers.*;
 import flounder.logger.*;
@@ -17,7 +16,7 @@ import flounder.renderer.*;
 import omega.background.*;
 import omega.entities.*;
 
-public class OmegaRenderer extends IExtension implements IRendererMaster {
+public class OmegaRenderer extends IRendererMaster {
 	public static final Colour COLOUR_CLEAR = new Colour(0.0f, 0.0f, 0.0f);
 	public static final Vector4f POSITIVE_INFINITY = new Vector4f(0.0f, 1.0f, 0.0f, Float.POSITIVE_INFINITY);
 
@@ -33,7 +32,7 @@ public class OmegaRenderer extends IExtension implements IRendererMaster {
 	private PipelinePaused pipelinePaused;
 
 	public OmegaRenderer() {
-		super(FlounderLogger.class, FlounderProfiler.class, FlounderDisplay.class, FlounderRenderer.class);
+		super(FlounderLogger.class, FlounderProfiler.class, FlounderDisplay.class);
 	}
 
 	@Override
