@@ -1,6 +1,3 @@
 [submodule "Flounder-Engine"]
 	path = Flounder-Engine
 	url = https://github.com/mattparks/Flounder-Engine
-[submodule "Flounder-Entities"]
-	path = Flounder-Entities
-	url = https://github.com/mattparks/Flounder-Entities
