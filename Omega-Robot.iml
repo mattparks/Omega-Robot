@@ -6,12 +6,10 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/res" type="java-resource" />
       <excludeFolder url="file://$MODULE_DIR$/Flounder-Engine" />
+      <excludeFolder url="file://$MODULE_DIR$/Flounder-Entities" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="Flounder-Framework" />
     <orderEntry type="module" module-name="Flounder-Engine" exported="" />
-    <orderEntry type="library" name="lwjgl" level="project" />
-    <orderEntry type="library" name="steamworks" level="project" />
   </component>
 </module>
