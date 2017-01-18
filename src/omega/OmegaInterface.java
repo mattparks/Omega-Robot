@@ -137,6 +137,7 @@ public class OmegaInterface extends IStandard {
 
 	@Override
 	public void dispose() {
+		Omega.closeConfigs();
 		SteamAPI.shutdown();
 	}
 

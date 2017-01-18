@@ -15,7 +15,6 @@ public class Omega extends FlounderFramework {
 	public static void main(String[] args) {
 		Omega omega = new Omega();
 		omega.run();
-		omega.closeConfigs();
 		System.exit(0);
 	}
 
@@ -42,7 +41,7 @@ public class Omega extends FlounderFramework {
 		MusicPlayer.SOUND_VOLUME = (float) configMain.getDoubleWithDefault("sound_volume", 0.75f, () -> MusicPlayer.SOUND_VOLUME);
 	}
 
-	public void closeConfigs() {
+	protected static void closeConfigs() {
 		configMain.dispose();
 		configPost.dispose();
 	}

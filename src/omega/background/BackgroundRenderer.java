@@ -93,7 +93,7 @@ public class BackgroundRenderer extends IRenderer {
 
 	@Override
 	public void profile() {
-		FlounderProfiler.add("Overlay", "Render Time", super.getRenderTimeMs());
+		FlounderProfiler.add("Overlay", "Render Time", super.getRenderTime());
 	}
 
 	@Override

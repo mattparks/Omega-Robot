@@ -41,8 +41,8 @@ public class ComponentPlayer extends IEntityComponent {
 		Vector2f posNew = new Vector2f(super.getEntity().getPosition());
 		Vector2f finalDelta = Vector2f.subtract(posNew, posLast, null);
 
-		FlounderProfiler.add("Player", "Delta X", finalDelta.x);
-		FlounderProfiler.add("Player", "Delta Y", finalDelta.y);
+		FlounderProfiler.add(OmegaEntities.PROFILE_TAB_NAME, "Player Delta X", finalDelta.x);
+		FlounderProfiler.add(OmegaEntities.PROFILE_TAB_NAME, "Player Delta Y", finalDelta.y);
 
 		changeFace(PlayerFace.NORMAL);
 		if (finalDelta.x > 0.0f) {

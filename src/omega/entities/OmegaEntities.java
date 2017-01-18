@@ -14,12 +14,13 @@ import omega.room.*;
 import java.util.*;
 
 public class OmegaEntities extends IModule {
-	private static final OmegaEntities instance = new OmegaEntities();
+	private static final OmegaEntities INSTANCE = new OmegaEntities();
+	public static final String PROFILE_TAB_NAME = "Entities";
 
 	private StructureBasic<Entity> entityStructure;
 
 	public OmegaEntities() {
-		super(ModuleUpdate.UPDATE_PRE, FlounderLogger.class, FlounderProfiler.class, FlounderModels.class, FlounderBounding.class, FlounderShaders.class, FlounderTextures.class);
+		super(ModuleUpdate.UPDATE_PRE, PROFILE_TAB_NAME, FlounderLogger.class, FlounderProfiler.class, FlounderModels.class, FlounderBounding.class, FlounderShaders.class, FlounderTextures.class);
 	}
 
 	@Override
@@ -40,20 +41,20 @@ public class OmegaEntities extends IModule {
 
 	@Override
 	public void profile() {
-		FlounderProfiler.add("Entities", "Count", entityStructure.getSize());
+		FlounderProfiler.add(PROFILE_TAB_NAME, "Count", entityStructure.getSize());
 	}
 
 	public static void clear() {
-		instance.entityStructure.getAll(new ArrayList<>()).forEach(Entity::forceRemove);
+		INSTANCE.entityStructure.getAll(new ArrayList<>()).forEach(Entity::forceRemove);
 	}
 
 	public static StructureBasic<Entity> getEntities() {
-		return instance.entityStructure;
+		return INSTANCE.entityStructure;
 	}
 
 	@Override
 	public IModule getInstance() {
-		return instance;
+		return INSTANCE;
 	}
 
 	@Override
