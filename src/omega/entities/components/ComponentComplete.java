@@ -10,7 +10,7 @@ import omega.room.*;
 
 public class ComponentComplete extends IEntityComponent {
 	public static final int ID = EntityIDAssigner.getId();
-	public static final Sound SOUND = Sound.loadSoundNow(new MyFile(MyFile.RES_FOLDER, "sounds", "won.wav"), 1.0f);
+	public static final Sound SOUND = Sound.loadSoundNow(new MyFile(MyFile.RES_FOLDER, "sounds", "won.wav"), 1.0f, 1.0f);
 
 	public ComponentComplete(Entity entity) {
 		super(entity, ID);

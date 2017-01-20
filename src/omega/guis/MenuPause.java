@@ -57,8 +57,8 @@ public class MenuPause extends GuiComponent {
 		aboutMessage = load("Robot Omega was created for Ludum Dare 37 (One room), by Matthew Albrecht. Find the missing computer chip for your robot! Use WASD/Arrow Keys to move, Esc to pause, F2 screenshot, F11 fullscreen. All configs are found in your roaming folder.", 0.125f);
 		aboutMessage.setAlphaDriver(new ConstantDriver(0.0f));
 
-		downUpSound = Sound.loadSoundNow(new MyFile(MyFile.RES_FOLDER, "sounds", "button2.wav"), 1.0f);
-		enterSound = Sound.loadSoundNow(new MyFile(MyFile.RES_FOLDER, "sounds", "button1.wav"), 1.0f);
+		downUpSound = Sound.loadSoundNow(new MyFile(MyFile.RES_FOLDER, "sounds", "button2.wav"), 1.0f, 1.0f);
+		enterSound = Sound.loadSoundNow(new MyFile(MyFile.RES_FOLDER, "sounds", "button1.wav"), 1.0f, 1.0f);
 
 		slideDriver = new ConstantDriver(0.0f);
 		backgroundAlpha = 0.0f;

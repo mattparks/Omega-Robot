@@ -10,7 +10,7 @@ import omega.room.*;
 
 public class ComponentHazard extends IEntityComponent {
 	public static final int ID = EntityIDAssigner.getId();
-	public static final Sound SOUND = Sound.loadSoundNow(new MyFile(MyFile.RES_FOLDER, "sounds", "live-remove.wav"), 1.0f);
+	public static final Sound SOUND = Sound.loadSoundNow(new MyFile(MyFile.RES_FOLDER, "sounds", "live-remove.wav"), 1.0f, 1.0f);
 
 	public ComponentHazard(Entity entity) {
 		super(entity, ID);

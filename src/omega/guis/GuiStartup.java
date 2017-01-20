@@ -56,8 +56,8 @@ public class GuiStartup extends GuiComponent {
 		startGame = new KeyButton(GLFW.GLFW_KEY_SPACE);
 		spaceBlinking = false;
 
-		typingSound = Sound.loadSoundNow(new MyFile(MyFile.RES_FOLDER, "sounds", "typing.wav"), 1.0f);
-		loadSound = Sound.loadSoundNow(new MyFile(MyFile.RES_FOLDER, "sounds", "enter.wav"), 1.0f);
+		typingSound = Sound.loadSoundNow(new MyFile(MyFile.RES_FOLDER, "sounds", "typing.wav"), 1.0f, 0.5f);
+		loadSound = Sound.loadSoundNow(new MyFile(MyFile.RES_FOLDER, "sounds", "enter.wav"), 1.0f, 1.0f);
 
 		FlounderSound.playSystemSound(typingSound);
 
