@@ -26,7 +26,7 @@ public class OmegaRenderer extends IRendererMaster {
 	private EntityRenderer entityRenderer;
 	private BackgroundRenderer backgroundRenderer;
 	private BoundingRenderer boundingRenderer;
-	private GuiRenderer guiRenderer;
+	private GuisRenderer guisRenderer;
 	private FontRenderer fontRenderer;
 
 	private PipelinePaused pipelinePaused;
@@ -40,7 +40,7 @@ public class OmegaRenderer extends IRendererMaster {
 		this.entityRenderer = new EntityRenderer();
 		this.backgroundRenderer = new BackgroundRenderer();
 		this.boundingRenderer = new BoundingRenderer();
-		this.guiRenderer = new GuiRenderer();
+		this.guisRenderer = new GuisRenderer();
 		this.fontRenderer = new FontRenderer();
 
 		this.pipelinePaused = new PipelinePaused();
@@ -61,7 +61,7 @@ public class OmegaRenderer extends IRendererMaster {
 		renderPost(FlounderGuis.getGuiMaster().isGamePaused(), FlounderGuis.getGuiMaster().getBlurFactor());
 
 		/* Scene independents. */
-		guiRenderer.render(POSITIVE_INFINITY, FlounderCamera.getCamera());
+		guisRenderer.render(POSITIVE_INFINITY, FlounderCamera.getCamera());
 		fontRenderer.render(POSITIVE_INFINITY, FlounderCamera.getCamera());
 
 		/* Unbinds the FBO. */
@@ -125,7 +125,7 @@ public class OmegaRenderer extends IRendererMaster {
 		backgroundRenderer.dispose();
 		entityRenderer.dispose();
 		boundingRenderer.dispose();
-		guiRenderer.dispose();
+		guisRenderer.dispose();
 		fontRenderer.dispose();
 
 		multisamplingFBO.delete();
